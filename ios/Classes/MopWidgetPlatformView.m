@@ -39,7 +39,7 @@
                 [self openWidgetWithQR:p[@"qrCode"] forceUpdate: p[@"forceUpdate"] != NULL];
             } else {
                 
-                NSLog(@"fincli 打开小组件报错：%@", error);
+               // NSLog(@"fincli 打开小组件报错：%@", error);
                 MopEventStream *eventStream = [[MopPlugin instance] mopEventStreamHandler];
                 NSDictionary *eventData = @{
                     @"viewId": @(self->_viewId),
