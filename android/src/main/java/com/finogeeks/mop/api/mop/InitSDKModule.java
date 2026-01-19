@@ -235,6 +235,12 @@ public class InitSDKModule extends BaseApi {
 
         // uiConfig
         FinAppConfig.UIConfig uiConfig = InitUtils.createUIConfigFromMap(uiConfigMap);
+        int resId = super.getContext().getResources().getIdentifier("returnmini", "drawable", super.getContext().getPackageName());
+        if(resId!=0){
+             uiConfig.setNavigateBarBackImageRes(resId);
+        }else{
+            Log.w(TAG, "initSDK: return image resource is not found!");
+        }
         if (uiConfig != null) {
             configBuilder.setUiConfig(uiConfig);
         }
