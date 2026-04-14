@@ -381,6 +381,11 @@ class UIConfig {
   // 是否自适应暗黑模式。如果设置为true，则更多页面、关于等原生页面会随着手机切换暗黑，也自动调整为暗黑模式
   bool autoAdaptDarkMode = false;
 
+    // FATUserInterfaceLight   = 0,    // 浅色模式
+    // FATUserInterfaceDark    = 1,    // 深色模式
+    // FATUserInterfaceAuto    = 2,    // 主题模式跟随系统
+  int themeStyle = 0;
+
   // 是否使用内置的live组件，默认为false。
   // 配置为true时，需要依赖Live扩展SDK。
   bool useNativeLiveComponent = false;
@@ -444,6 +449,7 @@ class UIConfig {
       "moreMenuStyle": moreMenuStyle,
       "isHideBackHomePriority": isHideBackHomePriority.index,
       "autoAdaptDarkMode": autoAdaptDarkMode,
+      "themeStyle": themeStyle,
       "useNativeLiveComponent": useNativeLiveComponent,
       "appendingCustomUserAgent": appendingCustomUserAgent,
       "transtionStyle": transtionStyle.index,
