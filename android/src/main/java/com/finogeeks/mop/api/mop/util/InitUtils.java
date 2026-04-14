@@ -156,6 +156,10 @@ public class InitUtils {
                 uiConfig.setIsHideBackHomePriority(FinAppConfigPriority.APPLET_FILE);
             }
             uiConfig.setAutoAdaptDarkMode((Boolean) map.get("autoAdaptDarkMode"));
+            Integer themeStyle = (Integer) map.get("themeStyle");
+            if (themeStyle != null) {
+                uiConfig.setThemeStyle(themeStyle);
+            }
             uiConfig.setDisableSlideCloseAppletGesture((Boolean) map.get("disableSlideCloseAppletGesture"));
             String loadingLayoutCls = (String) map.get("loadingLayoutCls");
             if (loadingLayoutCls != null) {
