@@ -256,6 +256,7 @@
         uiconfig.appletText = _uiConfig[@"appletText"];
         uiconfig.appendingCustomUserAgent = _uiConfig[@"customWebViewUserAgent"];
         uiconfig.autoAdaptDarkMode = [_uiConfig[@"autoAdaptDarkMode"] boolValue];
+        uiconfig.themeStyle = [_uiConfig[@"themeStyle"] integerValue];
         uiconfig.useNativeLiveComponent = [_uiConfig[@"useNativeLiveComponent"] boolValue];
     }
     
